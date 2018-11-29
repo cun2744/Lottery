@@ -35,7 +35,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.lblParsing = new System.Windows.Forms.Label();
+            this.ParsingBar = new System.Windows.Forms.ProgressBar();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,8 +74,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(368, 44);
             this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
+            this.button3.Text = "색 상 통 계";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -102,21 +105,40 @@
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // lblParsing
             // 
-            this.button7.Location = new System.Drawing.Point(509, 511);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(368, 44);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.lblParsing.AutoSize = true;
+            this.lblParsing.Location = new System.Drawing.Point(507, 506);
+            this.lblParsing.Name = "lblParsing";
+            this.lblParsing.Size = new System.Drawing.Size(67, 12);
+            this.lblParsing.TabIndex = 22;
+            this.lblParsing.Text = "현재 / 최대";
+            // 
+            // ParsingBar
+            // 
+            this.ParsingBar.Location = new System.Drawing.Point(509, 521);
+            this.ParsingBar.Name = "ParsingBar";
+            this.ParsingBar.Size = new System.Drawing.Size(268, 34);
+            this.ParsingBar.TabIndex = 21;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(802, 521);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 34);
+            this.btnAdd.TabIndex = 20;
+            this.btnAdd.Text = "파싱";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // Parents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(889, 567);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.lblParsing);
+            this.Controls.Add(this.ParsingBar);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -126,8 +148,10 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Parents";
             this.Text = "Parents";
+            this.Load += new System.EventHandler(this.Parents_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -140,6 +164,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label lblParsing;
+        private System.Windows.Forms.ProgressBar ParsingBar;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

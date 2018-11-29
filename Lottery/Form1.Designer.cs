@@ -45,9 +45,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.ParsingBar = new System.Windows.Forms.ProgressBar();
-            this.lblParsing = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -197,40 +194,11 @@
             this.button2.Text = "초기화";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(136, 415);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 17;
-            this.btnAdd.Text = "파싱";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // ParsingBar
-            // 
-            this.ParsingBar.Location = new System.Drawing.Point(19, 415);
-            this.ParsingBar.Name = "ParsingBar";
-            this.ParsingBar.Size = new System.Drawing.Size(100, 23);
-            this.ParsingBar.TabIndex = 18;
-            // 
-            // lblParsing
-            // 
-            this.lblParsing.AutoSize = true;
-            this.lblParsing.Location = new System.Drawing.Point(17, 400);
-            this.lblParsing.Name = "lblParsing";
-            this.lblParsing.Size = new System.Drawing.Size(67, 12);
-            this.lblParsing.TabIndex = 19;
-            this.lblParsing.Text = "현재 / 최대";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblParsing);
-            this.Controls.Add(this.ParsingBar);
-            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
@@ -283,9 +251,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.ProgressBar ParsingBar;
-        private System.Windows.Forms.Label lblParsing;
     }
 }
 
